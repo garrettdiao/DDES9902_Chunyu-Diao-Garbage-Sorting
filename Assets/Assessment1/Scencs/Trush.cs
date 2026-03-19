@@ -1,84 +1,48 @@
-using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class DragByInterface : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class Trash3D : MonoBehaviour
 {
     public int correctBinID;
     [TextArea] public string wrongBinMessage;
-    public PopupUI popupUI;
+    public bool isHeld = false;
 
-    private RectTransform rectTransform;
-    private Canvas canvas;
-    private CanvasGroup canvasGroup;
-    private Vector2 startPosition;
+    private Vector3 startPosition;
+    private Quaternion startRotation;
 
-    private void Awake()
+    private void Start()
     {
-        rectTransform = GetComponent<RectTransform>();
-        canvas = GetComponentInParent<Canvas>();
-
-        canvasGroup = GetComponent<CanvasGroup>();
-        if (canvasGroup == null)
-        {
-            canvasGroup = gameObject.AddComponent<CanvasGroup>();
-        }
-
-        startPosition = rectTransform.anchoredPosition;
+        startPosition = transform.position;
+        startRotation = transform.rotation;
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
+    public void ResetPosition()
     {
-        canvasGroup.blocksRaycasts = false;
+        Rigidbody rb = GetComponent<Rigidbody>();
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+
+        transform.position = startPosition;
+        transform.rotation = startRotation;
     }
 
-    public void OnDrag(PointerEventData eventData)
+    public void SetHeldState(bool heldState)
     {
-        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        isHeld = heldState;
     }
 
-    public void OnEndDrag(PointerEventData eventData)
+    public void ReleaseAfterDelay(float delay)
     {
-        canvasGroup.blocksRaycasts = true;
+        StartCoroutine(ReleaseCoroutine(delay));
+    }
 
-        List<RaycastResult> results = new List<RaycastResult>();
-        EventSystem.current.RaycastAll(eventData, results);
-
-        bool droppedOnBin = false;
-        bool isCorrectBin = false;
-
-        foreach (RaycastResult result in results)
-        {
-            BinUI bin = result.gameObject.GetComponent<BinUI>();
-
-            if (bin != null)
-            {
-                droppedOnBin = true;
-
-                if (bin.binID == correctBinID)
-                {
-                    isCorrectBin = true;
-                }
-
-                break;
-            }
-        }
-
-        if (isCorrectBin)
-        {
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            rectTransform.anchoredPosition = startPosition;
-
-            if (droppedOnBin && popupUI != null)
-            {
-                popupUI.ShowPopup(wrongBinMessage);
-            }
-        }
+    private IEnumerator ReleaseCoroutine(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        isHeld = false;
     }
 }

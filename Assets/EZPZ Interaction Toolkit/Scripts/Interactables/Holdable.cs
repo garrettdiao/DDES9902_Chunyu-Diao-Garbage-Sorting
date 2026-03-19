@@ -138,37 +138,54 @@ public class Holdable : InteractableGeneral
 
     public void Grab(RaycastInteractor newManipulator)
     {
+        Debug.Log("Grab called on: " + gameObject.name);
+
         myRayManipulator = newManipulator;
-    }
-    
-    public void Drop()
-    {
-        onDrop.Invoke();
+
+        Trash3D trash = GetComponent<Trash3D>();
+        if (trash != null)
+        {
+            trash.SetHeldState(true);
+            Debug.Log("isHeld set to TRUE on: " + gameObject.name);
+        }
     }
 
+    public void Drop()
+    {
+        Debug.Log("Drop called on: " + gameObject.name);
+
+        Trash3D trash = GetComponent<Trash3D>();
+        if (trash != null)
+        {
+            trash.SetHeldState(false);
+            Debug.Log("isHeld set to FALSE in Drop on: " + gameObject.name);
+        }
+
+        onDrop.Invoke();
+    }
     public void ForceDrop()
     {
+        Debug.Log("ForceDrop called on: " + gameObject.name);
+
         moving = false;
         transform.parent = null;
 
-        if(myRayManipulator != null)
+        if (myRayManipulator != null)
         {
             myRayManipulator.previousMoveParent = null;
             myRayManipulator.moveSubject = null;
             myRayManipulator = null;
         }
 
-        if(myMagnetSnapper != null)
+        if (myMagnetSnapper != null)
         {
             myMagnetSnapper.subject = null;
             myMagnetSnapper = null;
         }
 
-        
-        SetColliderIsTrigger(this, false);        
+        SetColliderIsTrigger(this, false);
 
-
-        if(myRbody != null)
+        if (myRbody != null)
         {
             myRbody.isKinematic = false;
             myRbody.useGravity = originalUseGravity;
