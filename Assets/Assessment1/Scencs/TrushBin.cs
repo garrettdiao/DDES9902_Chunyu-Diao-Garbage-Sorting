@@ -1,18 +1,13 @@
 using UnityEngine;
-
 public class BinTrigger : MonoBehaviour
 {
     public int binID;
-    public PopupUI popupUI;
-
+    public WorldSignUI worldSignUI;
     private void OnTriggerEnter(Collider other)
     {
         Trash3D trash = other.GetComponent<Trash3D>();
-
         if (trash == null) return;
-
         if (trash.isHeld) return;
-
         if (trash.correctBinID == binID)
         {
             other.gameObject.SetActive(false);
@@ -20,10 +15,9 @@ public class BinTrigger : MonoBehaviour
         else
         {
             trash.ResetPosition();
-
-            if (popupUI != null)
+            if (worldSignUI != null)
             {
-                popupUI.ShowPopup(trash.wrongBinMessage);
+                worldSignUI.ShowMessage(trash.wrongBinMessage);
             }
         }
     }
