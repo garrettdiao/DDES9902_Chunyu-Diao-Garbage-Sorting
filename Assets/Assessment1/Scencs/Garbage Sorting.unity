@@ -12194,7 +12194,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ffcbe22271b87ec48b47899308a216ae, type: 2}
+  - {fileID: 2100000, guid: f7133b1b8cc03dd449e81e13ac66591b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18617,7 +18617,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ffcbe22271b87ec48b47899308a216ae, type: 2}
+  - {fileID: 2100000, guid: f7133b1b8cc03dd449e81e13ac66591b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18677,7 +18677,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.83, y: -0.38, z: 0.009}
-  m_LocalScale: {x: 3.097805, y: 4.714978, z: 0.1320979}
+  m_LocalScale: {x: 3.371651, y: 5.1317825, z: 0.14377536}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 180857311}
@@ -19560,7 +19560,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ffcbe22271b87ec48b47899308a216ae, type: 2}
+  - {fileID: 2100000, guid: f7133b1b8cc03dd449e81e13ac66591b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22244,7 +22244,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ffcbe22271b87ec48b47899308a216ae, type: 2}
+  - {fileID: 2100000, guid: f7133b1b8cc03dd449e81e13ac66591b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22287,7 +22287,7 @@ PrefabInstance:
     - target: {fileID: 7457159944228665141, guid: e6333e629ba3a9e41b09e24be44ecbbc, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f6ab08e7d6d2c6144ab9b12616badeb0, type: 2}
+      objectReference: {fileID: 2100000, guid: 2606852bf2d948f46a26552865124214, type: 2}
     - target: {fileID: 7457159944228665143, guid: e6333e629ba3a9e41b09e24be44ecbbc, type: 3}
       propertyPath: m_LocalScale.z
       value: 57.601555
