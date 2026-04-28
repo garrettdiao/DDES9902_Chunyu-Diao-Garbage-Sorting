@@ -454,9 +454,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trash3D
   correctBinID: 4
-  wrongBinMessage: Snack packaging is classified as general waste, so it should be
-    placed in the red general waste bin because it is usually made of mixed materials
-    that cannot be easily separated or recycled.
+  wrongBinMessage: 'Paint should be thrown into the hazardous waste bin because it
+    contains harmful chemicals that can pollute soil and water. It requires special
+    handling and treatment to prevent environmental damage.
+
+    
+
+'
   isHeld: 0
 --- !u!1 &55425486
 GameObject:
@@ -765,7 +769,7 @@ PrefabInstance:
     - target: {fileID: 5063717709403955218, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 6d6c8c490d32afa469f3bc18aec92a93, type: 2}
+      objectReference: {fileID: 2100000, guid: 58b19a7b2036dd8498ed1515f73c2354, type: 2}
     - target: {fileID: 5063717709403955220, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -972,7 +976,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: General Waste
+  m_text: 'Hazardous
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1104,7 +1110,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300924496}
   m_LocalRotation: {x: -0, y: 0.7390101, z: -0, w: -0.67369443}
-  m_LocalPosition: {x: 0, y: 0, z: -19.150002}
+  m_LocalPosition: {x: 0, y: 0, z: -17.66}
   m_LocalScale: {x: 0.22218, y: 0.22218, z: 0.22218}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1407,7 +1413,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Paper
+  m_text: 'Recyclable
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1539,7 +1548,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398550042}
   m_LocalRotation: {x: -0, y: 0.7390101, z: -0, w: -0.67369443}
-  m_LocalPosition: {x: 0, y: 0, z: -7.19}
+  m_LocalPosition: {x: 0, y: 0, z: -6.93}
   m_LocalScale: {x: 0.22218, y: 0.22218, z: 0.22218}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1897,7 +1906,7 @@ PrefabInstance:
     - target: {fileID: 5063717709403955218, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: cfb72fbb3e32eaf4994cc9c43643fe2c, type: 2}
+      objectReference: {fileID: 2100000, guid: 0b08da7dea923c64d97b20a642d5d223, type: 2}
     - target: {fileID: 5063717709403955220, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -2336,6 +2345,118 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840115122}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &843234932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 843234933}
+  - component: {fileID: 843234936}
+  - component: {fileID: 843234935}
+  - component: {fileID: 843234934}
+  m_Layer: 6
+  m_Name: Wall_Left (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &843234933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843234932}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 7.3, y: 3.25, z: 10.84}
+  m_LocalScale: {x: 2.880495, y: 1.6368233, z: 0.029497633}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1216311860}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &843234934
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843234932}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &843234935
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843234932}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2a4c79794fed90c4cbf62f64a90c53e5, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &843234936
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843234932}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &851140059
 GameObject:
   m_ObjectHideFlags: 0
@@ -2619,7 +2740,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Recycling
+  m_text: Wet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2628,8 +2749,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278512639
-  m_fontColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    rgba: 4282010723
+  m_fontColor: {r: 0.38679248, g: 0.29798067, b: 0.2280616, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2751,7 +2872,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027065876}
   m_LocalRotation: {x: -0, y: -0.73090565, z: -0, w: -0.68247855}
-  m_LocalPosition: {x: 0, y: 0, z: -8.71}
+  m_LocalPosition: {x: 0, y: 0, z: -7.62}
   m_LocalScale: {x: 0.22218, y: 0.22218, z: 0.22218}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2957,9 +3078,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trash3D
   correctBinID: 3
-  wrongBinMessage: Old newspapers are classified as recyclable waste, so they should
-    be placed in the blue paper  bin because they can be recycled and made into new
-    paper products.
+  wrongBinMessage: 'Plastic bottles should be thrown into the recyclable waste bin
+    because they are made from recyclable plastic materials. They can be cleaned,
+    processed, and reused to produce new plastic products.
+
+    
+
+'
   isHeld: 0
 --- !u!1 &1199776812
 GameObject:
@@ -3175,6 +3300,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7457159944530478001, guid: e6333e629ba3a9e41b09e24be44ecbbc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1723794075}
+    - targetCorrespondingSourceObject: {fileID: 7457159944530478001, guid: e6333e629ba3a9e41b09e24be44ecbbc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 843234933}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6333e629ba3a9e41b09e24be44ecbbc, type: 3}
 --- !u!4 &1216311860 stripped
@@ -3228,7 +3356,7 @@ PrefabInstance:
     - target: {fileID: 5063717709403955218, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 9d5882674ec413f41886f9102534cef8, type: 2}
+      objectReference: {fileID: 2100000, guid: edfeab6e4f90c8c4898cb25fbceb6567, type: 2}
     - target: {fileID: 5063717709403955220, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -3300,7 +3428,7 @@ PrefabInstance:
     - target: {fileID: 5063717709403955218, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 49e5f51991284bf4fa342af22efe177e, type: 2}
+      objectReference: {fileID: 2100000, guid: bb59812ca0cbf7946b50e3fa9b18ebd7, type: 2}
     - target: {fileID: 5063717709403955220, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -3527,7 +3655,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365170970}
   m_LocalRotation: {x: -0, y: 0.9999883, z: -0, w: -0.004831435}
-  m_LocalPosition: {x: 0, y: 0, z: -9.52}
+  m_LocalPosition: {x: 0, y: 0, z: -1.157}
   m_LocalScale: {x: 0.60225, y: 0.60225, z: 0.60225}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3622,7 +3750,7 @@ PrefabInstance:
     - target: {fileID: 5063717709403955218, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f4f662952ab4d7b478d3a405fba40ce6, type: 2}
+      objectReference: {fileID: 2100000, guid: 0e5e09fc8293baa48a01aaf3c9c1327e, type: 2}
     - target: {fileID: 5063717709403955220, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -3697,9 +3825,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trash3D
   correctBinID: 2
-  wrongBinMessage: Plastic bottles are classified as recyclable waste, so they should
-    be placed in the yellow recycling bin because they can be processed and turned
-    into new plastic products.
+  wrongBinMessage: Fruit peels should be thrown into the wet waste bin because they
+    are biodegradable organic materials. They can decompose naturally and be processed
+    into compost or energy through biological treatment.
   isHeld: 0
 --- !u!1 &1509343669 stripped
 GameObject:
@@ -3720,8 +3848,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Trash3D
   correctBinID: 2
   wrongBinMessage: Aluminium cans are classified as recyclable waste, so they should
-    be placed in the yellow recycling bin because they can be recycled and made into
-    new metal products.
+    be placed in the yellow Food waste should be thrown into the wet waste bin because
+    it is organic and can break down naturally. Separating it allows it to be treated
+    through composting or other biological processes instead of being burned or landfilled.
   isHeld: 0
 --- !u!1 &1513803102 stripped
 GameObject:
@@ -3741,9 +3870,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trash3D
   correctBinID: 4
-  wrongBinMessage: Pizza boxes are classified as general waste, so they should be
-    placed in the red general waste bin because they are usually contaminated with
-    grease and food, making them unsuitable for recycling.
+  wrongBinMessage: Batteries should be thrown into the hazardous waste bin because
+    they contain toxic substances such as heavy metals. If disposed of improperly,
+    they can leak harmful chemicals and cause environmental pollution.
   isHeld: 0
 --- !u!1 &1531487167
 GameObject:
@@ -3992,9 +4121,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trash3D
   correctBinID: 1
-  wrongBinMessage: Banana peels are classified as organic waste, so they should be
-    placed in the green organics bin because they are natural food waste that can
-    decompose and be turned into compost.
+  wrongBinMessage: Snack bags should be thrown into the dry waste bin because they
+    are usually made of mixed materials such as plastic film and foil, which are
+    difficult to separate and recycle. They are also often contaminated with food
+    residue, making them unsuitable for recycling or composting.
   isHeld: 0
 --- !u!1001 &1627134131
 PrefabInstance:
@@ -4011,7 +4141,7 @@ PrefabInstance:
     - target: {fileID: 5063717709403955218, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 62c42e2a64497514c922dcf38f9ba0c0, type: 2}
+      objectReference: {fileID: 2100000, guid: fddcfb6154905f841bab4ca13e30b0ef, type: 2}
     - target: {fileID: 5063717709403955220, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -4086,9 +4216,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trash3D
   correctBinID: 1
-  wrongBinMessage: Leaves are classified as organic waste, so they should be placed
-    in the green organics bin because they are natural plant material that can decompose
-    and be turned into compost.
+  wrongBinMessage: 'Plastic bags should be thrown into the dry waste bin because
+    they are lightweight, easily contaminated, and difficult to recycle in standard
+    recycling systems. They can also interfere with recycling machinery, so they
+    are treated as residual waste.
+
+    
+
+'
   isHeld: 0
 --- !u!1 &1676765987
 GameObject:
@@ -4436,7 +4571,7 @@ Transform:
   m_GameObject: {fileID: 1723794074}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 7.67, y: 3.72, z: 6.24}
+  m_LocalPosition: {x: 7.44, y: 3.72, z: 6.24}
   m_LocalScale: {x: 14.7211895, y: 7.6305914, z: 0.15075195}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4715,7 +4850,7 @@ PrefabInstance:
     - target: {fileID: 5063717709403955218, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 03a34097180abaa47a845a8c79e664d6, type: 2}
+      objectReference: {fileID: 2100000, guid: 038f02f9e08852b4894e098bfba0001f, type: 2}
     - target: {fileID: 5063717709403955220, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -5153,7 +5288,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Organics
+  m_text: Dry
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5162,8 +5297,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281335725
-  m_fontColor: {r: 0.6784314, g: 1, b: 0.1843137, a: 1}
+    rgba: 4278259209
+  m_fontColor: {r: 0.035867725, g: 0.05660379, b: 0.0040049846, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5219,7 +5354,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -6.7001324, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -5285,7 +5420,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010703080}
   m_LocalRotation: {x: -0, y: -0.73090565, z: -0, w: -0.68247855}
-  m_LocalPosition: {x: 0, y: 0, z: -20.119999}
+  m_LocalPosition: {x: 0, y: 0, z: -21.4}
   m_LocalScale: {x: 0.22218, y: 0.22218, z: 0.22218}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5293,7 +5428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 1893.925, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.41, y: 2.76}
+  m_AnchoredPosition: {x: 7.21, y: 2.76}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2059863844
@@ -5423,9 +5558,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trash3D
   correctBinID: 3
-  wrongBinMessage: Cardboard boxes are classified as recyclable waste, so they should
-    be placed in the blue paper  bin because they can be recycled and made into new
-    paper products.
+  wrongBinMessage: Aluminum cans should be thrown into the recyclable waste bin because
+    aluminum is highly recyclable and can be repeatedly processed without losing
+    quality. Recycling aluminum saves energy and reduces the need for raw materials.
   isHeld: 0
 --- !u!1 &2100984249
 GameObject:
@@ -5652,7 +5787,7 @@ PrefabInstance:
     - target: {fileID: 5063717709403955218, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: fb6a2c5d33c81e84aa8e8ad4066616fe, type: 2}
+      objectReference: {fileID: 2100000, guid: d13cc85b8d3efed4c902d4754476ed04, type: 2}
     - target: {fileID: 5063717709403955220, guid: 394f4f12697e2874bbdd80bec582bea7, type: 3}
       propertyPath: m_RootOrder
       value: 14
