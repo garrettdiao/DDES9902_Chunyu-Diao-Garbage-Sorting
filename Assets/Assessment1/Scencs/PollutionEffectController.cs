@@ -28,6 +28,9 @@ public class PollutionEffectController : MonoBehaviour
     public GameObject[] finalFailTexts;
     public GameObject redFailureLight;
 
+    [Header("Audio")]
+    public AudioManager audioManager;
+
     private Vector3 originalBarScale;
     private Vector3 originalBarPosition;
     private bool finalTriggered = false;
@@ -171,6 +174,11 @@ public class PollutionEffectController : MonoBehaviour
         if (redFailureLight != null)
         {
             redFailureLight.SetActive(true);
+        }
+
+        if (audioManager != null)
+        {
+            audioManager.PlayFail();
         }
 
         Debug.Log("Final failure triggered.");
